@@ -324,6 +324,25 @@ function play_concurrently(sound) {
 
             prev_value = channel[i];
         }
+		
+		//Trying to transfer to audio tag
+		/*let anotherArray = new Float32Array();
+		theBuffer.copyFromChannel(anotherArray,0,0); 
+		const blob = new Blob([anotherArray], { type: "audio/wav" });
+		const url = window.URL.createObjectURL(blob); //creates a URL for the blob
+		
+		var audio = document.createElement('audio');
+		audio.src = url;
+		audio.play();
+		*/
+		
+		
+		/* Trying to implement _audioplayer.resume, _audioplayer.suspend
+		var btn = document.getElementById("soundButton")
+		btn.innerHTML = "Pause";
+		btn.onclick =_audioplayer.suspend;
+		*/
+		
 
         // Connect data to output destination
         let source = _audioplayer.createBufferSource();
