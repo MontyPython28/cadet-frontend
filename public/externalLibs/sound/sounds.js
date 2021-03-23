@@ -309,7 +309,7 @@ function play(sound) {
 
         _webplayer.src = riffwave.dataURI;
         source2.connect(_audioplayer.destination);
-        
+        let htmlStatus = document.getElementById("play-pause");
 
         _playing = true;
         audio.play();
@@ -433,6 +433,14 @@ function consecutively(list_of_sounds) {
         return pair(new_wave, dur1 + dur2);
     }
     return accumulate(consec_two, silence_sound(0), list_of_sounds);
+}
+
+//Test
+/**
+ *@returns {number} test
+ */
+function testing() {
+	return 1;
 }
 
 // Mushes a list of sounds together

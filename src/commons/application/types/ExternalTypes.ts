@@ -144,10 +144,12 @@ const soundsLibrary = [
   'sawtooth_sound',
   'play_unsafe', // undocumented
   'display_waveform', // undocumented
+  'testing',
   /** Microphone Sounds */
   'init_record',
   'record',
   'record_for',
+  //'then',
   /** Contest functions */
   'adsr',
   'stacking_adsr',

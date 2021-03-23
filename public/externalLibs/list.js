@@ -352,3 +352,7 @@ function set_tail(xs, x) {
     throw new Error('set_tail(xs,x) expects a pair as argument xs, but encountered ' + xs)
   }
 }
+
+function t() {
+	return "working"
+}

@@ -35,6 +35,7 @@ function init_record(){
 
 let globalStream;
 
+
 function rememberStream(stream) {
     permission = true;	
     globalStream = stream;
@@ -161,4 +162,12 @@ function save(audioBuffer) {
             const lower = array[lowerIndex] ? array[lowerIndex] : 0
             return lower * (1 - ratio) + upper * ratio
         }, duration);
+}
+
+function then() {
+	try {
+		print(1);
+	} catch (err) {
+		print(err.message);
+	}
 }
